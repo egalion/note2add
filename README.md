@@ -14,7 +14,7 @@ Ubuntu.
 There are other note-taking tools for the command line, but
 usually you have to supply the arguments from the command line.
 This script is interactive. Once you run it, it will ask you what
-to do and will prompto you with the options. Thus you won't have
+to do and will prompt you with some options. Thus you won't have
 to remember commands and arguments.
 
 ### What file format is used?
@@ -42,15 +42,13 @@ The script defaults to "nano" as the editor for the notes.
 
 ## Installation
 
-Just download the script to your path (e.g. "/usr/local/bin"),
-make it executable with
+Just download the script 
 
-> chmod +x note2add.sh
+> curl "https://raw.githubusercontent.com/egalion/note2add/master/note2add.sh" -o note2add.sh
 
-and you will be able to run it from your shell.  To make it work
-you will have to create the notes directory first.  For me it is
-"~/tn". You can change the notes directory by opening the script
-with your favourite editor and editing 
+To make it work you will have to create the notes directory
+first.  For me it is "~/tn". You can change the notes directory
+by opening the script with your favourite editor and editing 
 
 > NOTES2ADD_DIR="$HOME"/tn
 
@@ -60,9 +58,16 @@ that can be found on line 5 of the script, e.g. to
 
 if you want to have the notes directory in your Dropbox folder.
 
+Then make the script executable by doing
+
+> chmod +x note2add.sh
+
+and copy it to your path (e.g. "/usr/local/bin". The you will be
+able to run it from your shell.
+
 ## License and Warranty
 
 You are free to use, distribute or modify this script as you
 want. It is provided without any warranty. If you use it, do so
-at your own risk. I am not responsible for any damages that it
-may cause.
+at your own risk. I will not be responsible for any damages that
+it may cause.
